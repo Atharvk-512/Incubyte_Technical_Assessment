@@ -98,6 +98,9 @@ void Chandrayan::display_status(){
 
 
 int main() {
-    
+    Chandrayan spacecraft(0, 0, 0, 'N');
+    vector<char> commands = spacecraft.get_input();
+    spacecraft.execute(commands);
+    spacecraft.display_status();
     return 0;
 }
